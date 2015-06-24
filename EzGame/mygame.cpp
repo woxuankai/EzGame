@@ -136,8 +136,10 @@ uint8_t Shell::gameStart()
 		{
 			if (alive == 0)
 				return 1;//ÄÄ¶ù²»¶Ô
-			cout << "Game Over" << endl;
+			cout <<endl<< "Game Over" << endl;
 			cout << "Player:" << playerlist[alivedone-1]->getPlayername()<<"WIN!!!"<<endl;
+			cout << "Press any key to exit" << endl;
+			_getch();
 			return 0;
 		}
 		for (uint32_t i = 1; i <= playernumber; i++)
